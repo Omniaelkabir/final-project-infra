@@ -23,32 +23,32 @@
     
    1) get clone to this repo with this command
       
-      git clone git@github.com:Omniaelkabir/final-project-infra.git
+          git clone git@github.com:Omniaelkabir/final-project-infra.git
       
    2) Enter terraform_files directory change projectid ... etc to match your needs
     
    3) Open terminal to run terraform command
     
-      terraform init
+          terraform init
       
       
-      terraform apply
+          terraform apply
       
    4) Enter jenkins directory then open terminal to build Dockerfile and push image to GCR
       
-      docker build . -t gcr.io/big-unison-377212/jenkins-deploy
+          docker build . -t gcr.io/big-unison-377212/jenkins-deploy
 
-      docker push gcr.io/big-unison-377212/jenkins-deploy:latest
+          docker push gcr.io/big-unison-377212/jenkins-deploy:latest
 
    5) Go to google console in Compute Engine choose vm instance then click on SSH
     
       1. get clone to this repo with this command
         
-         git clone git@github.com:Omniaelkabir/final-project-infra.git
+             git clone git@github.com:Omniaelkabir/final-project-infra.git
               
       2. checking the version of helm which is installed in the script of the vm install.sh file
       
-        helm version
+             helm version
         
       3. connect to the cluster:   
       
