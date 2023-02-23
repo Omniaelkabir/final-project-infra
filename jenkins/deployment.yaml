@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  jenkins-deploy
+  namespace: jenkins
+  labels:
+    app:  jenkins-deploy
+spec:
+  selector:
+    matchLabels:
+      app: jenkins-deploy
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app:  jenkins-deploy
+    spec:
+      serviceAccount: jenkins-deployer
+      automountServiceAccountToken: true
+      securityContext:
+        fsGroup: 0
+        runAsUser: 0
+      containers:
+      - name:  jenkins-deploy
+        image:  gcr.io/big-unison-377212/jenkins-deploy
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 22
+          name:  jenkins-deploy
+        volumeMounts:
+        - name: docker-sock
+          mountPath: /var/run/docker.sock
+      volumes:
+        - name: docker-sock
+          hostPath:
+            path: /var/run/docker.sock
