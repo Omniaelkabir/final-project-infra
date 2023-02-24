@@ -35,7 +35,7 @@
    4) Enter jenkins directory then open terminal to build Dockerfile and push image to GCR
       
           docker build . -t gcr.io/big-unison-377212/jenkins-deploy
-          ![Screenshot from 2023-02-24 16-46-08](https://user-images.githubusercontent.com/88335759/221208258-5ed49ece-8ea5-401b-babe-d2cead966528.png)
+     ![Screenshot from 2023-02-24 16-46-08](https://user-images.githubusercontent.com/88335759/221208258-5ed49ece-8ea5-401b-babe-d2cead966528.png)
 
           docker push gcr.io/big-unison-377212/jenkins-deploy:latest
           
@@ -89,9 +89,9 @@
 
     2. Open Jenkins Server and go to manage jenkins then go to manage nodes and clouds and then click on add new node
     
-    ![Screenshot from 2023-02-24 17-14-22](https://user-images.githubusercontent.com/88335759/221215154-2b9ad378-3b52-4358-a52b-97d8c1365a6b.png)
+   ![Screenshot from 2023-02-24 17-14-22](https://user-images.githubusercontent.com/88335759/221215154-2b9ad378-3b52-4358-a52b-97d8c1365a6b.png)
     
-    ![Screenshot from 2023-02-24 17-14-38](https://user-images.githubusercontent.com/88335759/221215354-f6fb9d63-05e1-40ca-bd73-6d21ec6624e1.png)
+   ![Screenshot from 2023-02-24 17-14-38](https://user-images.githubusercontent.com/88335759/221215354-f6fb9d63-05e1-40ca-bd73-6d21ec6624e1.png)
     
     3. Some configuration we will do in the opened terminal -that have VM opened in SSH- to do to complete the Launching of the new node:
 
@@ -109,7 +109,7 @@
             
         . Go Back to the Jenkins Server as we were on the node jenkins-slave and go to Status then click on the button Launch
         
-        ![Screenshot from 2023-02-24 16-35-59](https://user-images.githubusercontent.com/88335759/221216636-73f8200f-92eb-412e-b909-a89f62579f33.png)
+   ![Screenshot from 2023-02-24 16-35-59](https://user-images.githubusercontent.com/88335759/221216636-73f8200f-92eb-412e-b909-a89f62579f33.png)
 
         
 
