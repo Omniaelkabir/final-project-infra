@@ -18,4 +18,3 @@ resource "google_compute_network" "myvpc" {
     google_project_service.container
   ]
 }
-

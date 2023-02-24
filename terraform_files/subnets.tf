@@ -1,3 +1,4 @@
+
 resource "google_compute_subnetwork" "restricted-subnet" {
   name                     = "restricted-subnet"
   ip_cidr_range            = "10.0.0.0/18"
