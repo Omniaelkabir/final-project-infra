@@ -35,7 +35,7 @@
    4) Enter jenkins directory then open terminal to build Dockerfile and push image to GCR
       
           docker build . -t gcr.io/big-unison-377212/jenkins-deploy
-     ![Screenshot from 2023-02-24 16-46-08](https://user-images.githubusercontent.com/88335759/221208258-5ed49ece-8ea5-401b-babe-d2cead966528.png)
+![Screenshot from 2023-02-24 16-46-08](https://user-images.githubusercontent.com/88335759/221208258-5ed49ece-8ea5-401b-babe-d2cead966528.png)
 
           docker push gcr.io/big-unison-377212/jenkins-deploy:latest
           
